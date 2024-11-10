@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: #6a1b9a;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    width: 100%;
+    height: 100px;
+}
+header > div {
+    width: 85px;
+    height: 65px;
+    padding: 2%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px 50px 500px 100px;
+    text-align: left;
+}
+div button {
+    width: 5rem;
+    height: 3rem;
+    color: #FFFFFF;
+    background: -webkit-radial-gradient(30px 50px, ellipse, #DAA520 50%, #B8860B 70%, #D2691E 90%);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+header button:hover {
+    transform: scale(1.1);
+}
+header button:active {
+    transform: scale(0.90);
+}
+main {
+    background-color: #FFFFFF;
+    width: 85%;
+    border-radius: 25px;
+    margin-bottom: 4rem;
+}
+section .titulo {
+    font: 800 40px sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 5px;
+    filter: drop-shadow(2px 2px 2px #333333);
+}
+section .subtitulo {
+    font: 700 38px sans-serif;
+    color: #000000;
+    text-align: center;
+    padding: 0px 0px 25px 0px;
+}
+section .subtitulo_contenido-articulo {
+    font: 600 30px sans-serif;
+    color: #000000;
+    margin: 20px 40px 0px
+}
+section p, listas {
+    text-align: justify;
+    font: 400 20px sans-serif;
+    color: #000000;
+    margin: 0 30px;
+    padding: 0 15px 10px 10px;
+}
+section .listas {
+    margin: 0 50px;
+    padding: 10px 30px;
+}
+section #mensajeTitulo {
+    font: 700 38px Monospace, sans-serif;
+    text-align: center;
+    color: #200034;
+    padding: 10px 0 10px;
+}
+section #mensaje {
+    text-align: center;
+    margin: 0px 70px 60px;
+    color: #555555;
+}
+@media (max-width: 768px) {
+    body {
+        
+    }
+    main {
+        width: 90%;
+    }
+}
+@media (max-width: 570px) {
+    header {
+        height: 50px;
+    }
+    main {
+        width: 95%;
+    }
+    section .titulo {
+        font-size: 30px;
+    }
+    section .subtitulo {
+        font-size: 24px;
+    }
+    section .subtitulo_contenido-articulo {
+        font-size: 22px;
+        margin: 20px 20px 0;
+    }
+    section p, listas {
+        font-size: 17px;
+        margin: 0 10px;
+    }
+    section .listas {
+        margin: 0 10px;
+    }
+    section #mensaje {
+        margin: 0 15px 60px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="description" content="Este es un documento HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content='user-scalable=no, width=device-width, initial-scale=1'>
+    <title>Document</title>
+    <link rel="icon" href="../img/1616122690539.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+     <header>
+        <!-- el logo de la institución -->
+        <div id="barra">
+            <div class="logo">
+                <img src="../img/images.png" alt="logo de la institución" width="50" title="CEA Loreto Cetal Mañana">
+            </div>
+            
+            <!-- Los enlaces -->
+            <nav id="menuicono">
+                <img src="../img/menubuttonofthreelines_79781.ico" width="35" id="menu-img">
+            </nav>
+            <nav id="menuprincipal">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../index.html">Valores</a></li>
+                    <li><a href="./ley348.html">Ley 348</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- el titulo y el fondo de la cabecera -->
+        <div id="cabecera">
+            <div>
+                <h1>Educación con valores y libre de violencia</h1>
+                <h2>Sistemas Informáticos</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 id="videos">Videos</h2>
+        <section id="amarillo">
+            <div class="contenedor">
+                <div class="contenedor_superior-naranja contenedor-superior">
+                    <img src="../img/DkTAVJeUcAAhOIG.jpg">
+                </div>
+                <div class="contenido">
+                    <h3 class="subtitulo">Videos para una vida libre y sin violencia</h3>
+                    <h4>Enlaces:</h4>
+                    <div>
+                        <ol class="listas">
+                            <li class="item"><mark><a class="link" href="https://vm.tiktok.com/ZMhPQr4oF/" target="_blank">Justicia para la mujer</a></mark></li>
+                            <li class="item"><mark><a class="link" href="https://vm.tiktok.com/ZMh5EYhta/" target="_blank">La ciberseguridad y la dispatriarcalización</a></mark></li>
+                            <li class="item"><mark><a class="link" href="https://www.facebook.com/share/v/15LuZThUHK/" target="_blank">¿Qué es el patriarcado?</a></mark></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contenedor">
+                <div class="contenedor_superior-amarilla contenedor-superior">
+                    <img src="../img/hqdefault.jpg">
+                </div>
+                <div class="contenido">
+                    <h3 class="texto subtitulo">Videos para la práctica de valores</h3>
+                    <h4>Enlaces:</h4>
+                    <div>
+                        <ol class="listas">
+                            <li class="item"><mark><a class="link" href="https://vm.tiktok.com/ZMhmBbgxx/" target="_blank">¿Qué es el respeto?</a></mark></li>
+                            <li class="item"><mark><a class="link" href="https://vm.tiktok.com/ZMhmBnUxg/" target="_blank">¿Qué es la responsabilidad?</a></mark></li>
+                            <li class="item"><mark><a class="link" href="https://vm.tiktok.com/ZMhmyTv8n/" target="_blank">El valor del respeto</a></mark></li>
+                            <li class="item"><mark><a class="link" href="https://vm.tiktok.com/ZMhm5REgu/" target="_blank">El valor de la responsabilidad</a></mark></li>
+                            <li class="item"><mark><a class="link" href="https://drive.google.com/drive/folders/1V46GVO8Am2OYV1CqrrsYi0cN18wwR-aA?usp=sharing" target="_blank">Otros videos</a></mark></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <section class="seccionpie-izquierdo">
+                <a href="https://facebook.com/groups/1038556392965760/" target="_blank">
+                    <img src="../img/facebook.png" alt="facebook" width="30">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="../img/twitter.png" alt="twitter" width="30">
+                </a>
+                <a href="https://www.instagram.com/jhaketyler/profilecard/?igsh=MXZtYjYwMnJzdnhweQ==" target="_blank">
+                    <img src="../img/instagram.png" alt="instagram" width="30">
+                </a>
+            </section>
+            <section class="seccionpie-derecho">
+                <small>&copy; Sistemas Informaticos 2024</small><br>
+                <cite>Jhonatan Torrico Condori</cite><br>
+                <cite>Gerald Alejandro Renfijo Sajama</cite>
+            </section>
+            <div class="restaurar"></div>
+        </div>
+    </footer>
+    <script>
+        var visible =false;
+        function iniciar() {
+            var elemento = document.getElementById("menu-img");
+            elemento.addEventListener("click", mostrarMenu);
+        }
+        function mostrarMenu() {
+            var elemento = document.getElementById("menuprincipal");
+            if (!visible) {
+                elemento.style.display = "block";
+                visible = true;
+            } else {
+                elemento.style.display = "none";
+                visible = false;
+            }
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+</body>
+</html>

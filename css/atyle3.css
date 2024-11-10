@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body {
+    
+}
+header {
+    width: 250px;
+    height: 100px;
+}
+header > div {
+    width: 85px;
+    height: 65px;
+    padding: 2%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 100;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px 50px 500px 100px;
+    text-align: center;
+}
+div button {
+    width: 5rem;
+    height: 3rem;
+    color: #FFFFFF;
+    background: -webkit-radial-gradient(30px 50px, ellipse, #DAA520 50%, #B8860B 70%, #D2691E 90%);
+    cursor: pointer;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+div button a {
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+header button:hover {
+    transform: scale(1.1);
+}
+header button:active {
+    transform: scale(0.95);
+}
+section .titulo {
+    font: 800 48px sans-serif;
+    text-align: center;
+    filter: drop-shadow(1px 1px 2px rgb(0, 0, 0, 9));
+}
+section .subtitulo_contenido-valores {
+    font: 700 30px sans-serif;
+    margin: 0px 100px;
+    padding: 0px 0px 5px;
+}
+section p {
+    font: 400 20px sans-serif;
+    margin: 0px 90px 0px;
+    padding: 0px 10px 20px;
+}
+section .listas {
+    margin: 0 115px;
+    padding: 0 20px 25px;
+}
+@media (max-width: 768px) {
+    section .titulo {
+        font-size: 34px;
+    }
+    section .subtitulo_contenido-valores {
+        font-size: 22px;
+        margin: 20px 20px 0;
+    }
+    section p {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+    section .listas {
+        margin: 10px 20px 0;
+    }
+}
+@media (max-width: 570px) {
+    section .titulo {
+        font-size: 32px;
+    }
+    section .subtitulo_contenido-valores {
+        font-size: 20.5px;
+        margin: 20px 20px 0;
+    }
+    section p {
+        font-size: 17px;
+        margin: 0 10px;
+    }
+    section .listas {
+        margin: 10px 20px 0;
+    }
+}

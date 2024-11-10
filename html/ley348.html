@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="description" content="Este es un documento HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content='user-scalable=no, width=device-width, initial-scale=1'>
+    <title>Document</title>
+     <link rel="icon" href="../img/1616122690539.png" type="image/png" sizes="16x16">
+     <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body>
+    <header>
+        <!-- el logo de la institución -->
+        <div id="barra">
+            <div class="logo">
+                <img src="../img/images.png" alt="logo de la institución" width="50" title="CEA Loreto Cetal Mañana">
+            </div>
+            
+            <!-- Los enlaces -->
+            <nav id="menuicono">
+                <img src="../img/menubuttonofthreelines_79781.ico" width="35" id="menu-img">
+            </nav>
+            <nav id="menuprincipal">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../index.html">Valores</a></li>
+                    <li><a href="#ley348">Ley 348</a></li>
+                    <li><a href="./videos.html">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- el titulo y el fondo de la cabecera -->
+        <div id="cabecera">
+            <div>
+                <h1>Educación con valores y libre de violencia</h1>
+                <h2>Sistemas Informáticos</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 id="ley348">Ley 348</h2>
+        
+        <div id="contenedor">
+            <section class="rosado">
+                <div class="contenedor-carta">
+                    <div class="contenedor_superior-rosado">
+                        <img src="../img/ley348.webp">
+                    </div>
+                    <div class="contenido">
+                        <h3 class="texto-rosado">Ley 348</h3>
+                        <a href="articuloLey348.html" onclick="sessionStorage.setItem('valor', 'ley')">
+                            <button>Leer artículo</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="azul">
+                <div class="contenedor-carta">
+                    <div class="contenedor_superior-azul">
+                        <img src="../img/marcha-25n_0.jpg">
+                    </div>
+                    <div class="contenido">
+                        <p class="texto-azul">La ley 348 de Bolivia garantiza a las mujeres una vida libre de violencia, abarcando diferentes tipos de agresiones como la física, psicológica, sexual, económica y patrimonial.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="azul-dos">
+                <div class="contenedor-carta">
+                    <div class="contenedor_superior-azul">
+                        <img src="../img/2019S16137.jpg">
+                    </div>
+                    <div class="contenido">
+                        <p class="texto-azul">Esta ley establece mecanismo para la protección de las víctimas y sanciona severamente a los agresores, con el fin de prevenir y erradicar la violencia contra las mujeres en el país.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="rosado-dos">
+                <div class="contenedor-carta">
+                    <div class="contenedor_superior-rosado">
+                        <img src="../img/vida-sin-violencia.webp">
+                    </div>
+                    <div class="contenido">
+                        <p class="texto-rosado">La ley 348 también promueve la creación de servicios de atención integral y campañas de sencibilización, asegurando un enfoque preventivo y de apoyo para las mujeres en situación de violencia.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <section class="seccionpie-izquierdo">
+                <a href="https://facebook.com/groups/1038556392965760/" target="_blank">
+                    <img src="../img/facebook.png" alt="facebook" width="30">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="../img/twitter.png" alt="twitter" width="30">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="../img/instagram.png" alt="instagram" width="30">
+                </a>
+            </section>
+            <section class="seccionpie-derecho">
+                <small>&copy; Sistemas Informaticos 2024</small><br>
+                <cite>Jhonatan Torrico Condori</cite><br>
+                <cite>Gerald Alejandro Renfijo Sajama</cite>
+            </section>
+            <div class="restaurar"></div>
+        </div>
+    </footer>
+    
+    <script>
+        function guardarValor(valor) {
+            sessionStorage.setItem('valor', valor);
+        }
+        
+        var visible =false;
+        function iniciar() {
+            var elemento = document.getElementById("menu-img");
+            elemento.addEventListener("click", mostrarMenu);
+        }
+        function mostrarMenu() {
+            var elemento = document.getElementById("menuprincipal");
+            if (!visible) {
+                elemento.style.display = "block";
+                visible = true;
+            } else {
+                elemento.style.display = "none";
+                visible = false;
+            }
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+</body>
+</html>
